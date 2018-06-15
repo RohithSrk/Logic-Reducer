@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="LogicReducer.GUI">
+  <grid id="27dc6" binding="pane5" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <toolbar id="3058b">
+        <constraints border-constraint="North"/>
+        <properties>
+          <floatable value="false"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="105ff" class="javax.swing.JLabel" binding="inputLabel">
+            <constraints/>
+            <properties>
+              <alignmentX value="0.5"/>
+              <horizontalAlignment value="0"/>
+              <preferredSize width="100" height="16"/>
+              <text value="No. of variables:"/>
+            </properties>
+          </component>
+          <component id="fd24b" class="javax.swing.JComboBox" binding="inputTypeComboBox1">
+            <constraints/>
+            <properties>
+              <maximumSize width="100" height="32767"/>
+              <minimumSize width="100" height="26"/>
+              <model/>
+              <preferredSize width="100" height="26"/>
+            </properties>
+          </component>
+          <hspacer id="57137">
+            <constraints/>
+          </hspacer>
+          <component id="80aae" class="javax.swing.JButton" binding="solveButton" default-binding="true">
+            <constraints/>
+            <properties>
+              <text value="Solve"/>
+            </properties>
+          </component>
+          <component id="7e86e" class="javax.swing.JToolBar$Separator">
+            <constraints/>
+            <properties/>
+          </component>
+        </children>
+      </toolbar>
+      <splitpane id="d919d" binding="mainSplitPane">
+        <constraints border-constraint="Center"/>
+        <properties>
+          <continuousLayout value="false"/>
+          <dividerLocation value="266"/>
+          <dividerSize value="10"/>
+          <orientation value="0"/>
+          <resizeWeight value="0.8"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <splitpane id="25cc9" binding="subSplitPane">
+            <constraints>
+              <splitpane position="left"/>
+            </constraints>
+            <properties>
+              <continuousLayout value="false"/>
+              <resizeWeight value="0.8"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <grid id="4fa93" binding="leftPannel" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <splitpane position="left"/>
+                </constraints>
+                <properties>
+                  <preferredSize width="500" height="300"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <scrollpane id="ea561" binding="tableScroll">
+                    <constraints border-constraint="Center"/>
+                    <properties>
+                      <minimumSize width="250" height="25"/>
+                      <preferredSize width="300" height="300"/>
+                    </properties>
+                    <border type="none"/>
+                    <children>
+                      <component id="91589" class="javax.swing.JTable" binding="table1" custom-create="true" default-binding="true">
+                        <constraints/>
+                        <properties>
+                          <cellSelectionEnabled value="false"/>
+                          <rowSelectionAllowed value="false"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </scrollpane>
+                </children>
+              </grid>
+              <grid id="81c9c" binding="rightPannel" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <splitpane position="right"/>
+                </constraints>
+                <properties>
+                  <preferredSize width="300" height="300"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="65690" class="javax.swing.JLabel" binding="rightLabel1">
+                    <constraints border-constraint="North"/>
+                    <properties>
+                      <horizontalAlignment value="0"/>
+                      <text value="Question"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </splitpane>
+          <grid id="f3d85" binding="bottomPannel" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
+            <constraints>
+              <splitpane position="right"/>
+            </constraints>
+            <properties>
+              <preferredSize width="24" height="150"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="da624" class="javax.swing.JLabel" binding="primeImplicantsLabel">
+                <constraints/>
+                <properties>
+                  <preferredSize width="9000" height="16"/>
+                  <text value="Prime Implicants"/>
+                </properties>
+              </component>
+              <component id="e80d9" class="javax.swing.JLabel" binding="ePrimeImplicantsLabel">
+                <constraints/>
+                <properties>
+                  <preferredSize width="9000" height="16"/>
+                  <text value="Essential Prime Implicants:"/>
+                </properties>
+              </component>
+              <component id="be526" class="javax.swing.JLabel" binding="solutionLabel">
+                <constraints/>
+                <properties>
+                  <text value="Solution"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </splitpane>
+    </children>
+  </grid>
+</form>
